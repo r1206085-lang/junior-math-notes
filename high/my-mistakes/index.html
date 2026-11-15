@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-Hant" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>三年高中數學錯題本總覽｜高一、高二、高三依單元分類清單</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高中數學錯題本總覽｜三段式訂正法</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>body{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif}.step{position:relative}.step:not(:last-child)::after{content:"↓";display:block;text-align:center;color:#e11d48;font-size:1.6rem;font-weight:900;padding:.35rem}</style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
-        <a href="../../index.html" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs sm:text-sm font-semibold transition">🏠 網站總首頁</a>
-        <a href="../index.html" class="px-3 py-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs sm:text-sm font-semibold transition">← 返回高中專區首頁</a>
-      </div>
-      <span class="px-3 py-1 rounded-full bg-rose-100 text-rose-800 text-xs font-bold">📁 high/my-mistakes/ 錯題本總覽</span>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
+  <header class="sticky top-0 z-10 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
+      <nav class="flex flex-wrap gap-2 text-sm"><a class="rounded-lg bg-slate-100 px-3 py-2 hover:bg-slate-200" href="../../index.html">🏠 網站總首頁</a><a class="rounded-lg bg-indigo-50 px-3 py-2 text-indigo-700 hover:bg-indigo-100" href="../index.html">← 高中數學專區</a></nav>
+      <span class="rounded-full bg-rose-100 px-3 py-1 text-xs font-bold text-rose-800">📓 high/my-mistakes/</span>
     </div>
   </header>
-
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-10">
-    <section class="rounded-3xl bg-gradient-to-br from-rose-900 via-slate-900 to-indigo-950 text-white p-8 sm:p-12 shadow-xl space-y-4">
-      <span class="px-3 py-1 rounded-full bg-rose-500/20 border border-rose-400/30 text-rose-200 text-xs font-semibold">📓 核心寶藏資料夾</span>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">高中三年高中數學錯題本總覽</h1>
-      <p class="text-slate-300 text-base sm:text-lg max-w-3xl">
-        依照高一（數學 I、II）、高二（數學 III、IV）、高三（選修數甲／乙 I、II，含高三下二次曲線与微積分）共 18 個核心單元分類管理。精選題目、幾何圖解與完整詳解皆依單元歸檔於此！
-      </p>
+  <main class="mx-auto max-w-6xl space-y-10 px-4 py-10">
+    <section class="space-y-4 rounded-3xl bg-gradient-to-br from-rose-900 via-slate-900 to-indigo-950 p-8 text-white shadow-xl sm:p-12">
+      <span class="inline-block rounded-full border border-rose-300/30 bg-rose-400/20 px-3 py-1 text-sm text-rose-100">把錯誤變成下一次答對的線索</span>
+      <h1 class="text-3xl font-extrabold tracking-tight sm:text-5xl">高中數學錯題本</h1>
+      <p class="max-w-3xl text-slate-200">每題都用三段式整理：先還原錯題，再找出真正錯因，最後寫出可重複使用的正解策略。選擇年級，開始複習你的題目。</p>
+      <a class="inline-block rounded-xl bg-rose-400 px-5 py-3 font-bold text-slate-950 hover:bg-rose-300" href="../index.html#my-mistakes">前往高中數學專區 →</a>
     </section>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <article class="bg-white rounded-2xl border-2 border-indigo-200 p-6 shadow-sm hover:shadow-xl transition flex flex-col justify-between space-y-4">
-        <div class="space-y-3">
-          <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-xs font-bold">高一（Grade 10）• 第一、二冊共 76 題</span>
-          <h2 class="text-2xl font-extrabold text-slate-900"><a href="grade10-algebra.html" class="hover:text-indigo-600">高一錯題本：代數、函數與有限數學</a></h2>
-          <p class="text-sm text-slate-600">涵蓋：數與式、多項式函數、指數與對數函數、數列與級數、排列組合与二項式定理、古典與條件機率（貝氏定理）、數據分析（標準化與迴歸直線）。</p>
-        </div>
-        <a href="grade10-algebra.html" class="block text-center py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm transition">進入高一錯題本 →</a>
-      </article>
+    <section aria-labelledby="method-title" class="space-y-5">
+      <div><p class="text-sm font-bold uppercase tracking-widest text-rose-700">THREE-STEP REVIEW</p><h2 id="method-title" class="text-2xl font-extrabold text-slate-900">三段式錯題訂正法</h2><p class="text-slate-600">不要只抄正確答案；把思考過程也留下來，才知道下次如何避免同一種失誤。</p></div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <article class="step rounded-2xl border-2 border-rose-200 bg-white p-6 shadow-sm"><span class="text-xs font-black text-rose-700">第一段｜還原題目</span><h3 class="mt-2 text-xl font-extrabold">我錯在哪一題？</h3><p class="mt-2 text-sm text-slate-600">記下題目來源、單元、關鍵條件與自己的原始解法。保留錯誤步驟，不要只留下題號。</p><div class="mt-4 rounded-lg bg-rose-50 p-3 text-sm"><strong>記錄：</strong>題目條件、我的作答、錯誤答案</div></article>
+        <article class="step rounded-2xl border-2 border-amber-200 bg-white p-6 shadow-sm"><span class="text-xs font-black text-amber-700">第二段｜診斷錯因</span><h3 class="mt-2 text-xl font-extrabold">為什麼會出錯？</h3><p class="mt-2 text-sm text-slate-600">判斷是觀念不清、公式誤用、計算失誤、漏看條件，還是解題策略不合適。</p><div class="mt-4 rounded-lg bg-amber-50 p-3 text-sm"><strong>自問：</strong>哪一步開始不成立？我忽略了什麼？</div></article>
+        <article class="step rounded-2xl border-2 border-emerald-200 bg-white p-6 shadow-sm"><span class="text-xs font-black text-emerald-700">第三段｜訂正與再練</span><h3 class="mt-2 text-xl font-extrabold">下次怎麼解對？</h3><p class="mt-2 text-sm text-slate-600">完整重寫正解，標註關鍵理由，再做一道變化題驗證自己已經真正理解。</p><div class="mt-4 rounded-lg bg-emerald-50 p-3 text-sm"><strong>留下：</strong>正確步驟、檢查方式、下次提醒</div></article>
+      </div>
+    </section>
 
-      <article class="bg-white rounded-2xl border-2 border-sky-200 p-6 shadow-sm hover:shadow-xl transition flex flex-col justify-between space-y-4">
-        <div class="space-y-3">
-          <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold">高二（Grade 11）• 第三、四冊共 57 題</span>
-          <h2 class="text-2xl font-extrabold text-slate-900"><a href="grade11-trig.html" class="hover:text-sky-600">高二錯題本：三角、坐標向量與矩陣</a></h2>
-          <p class="text-sm text-slate-600">涵蓋：廣義角與正餘弦定理、差角倍角半角公式、直線與圓（線性規劃与圓切線）、平面向量（內積与二階行列式）、空間向量（外積與三階行列式）、空間平面與直線、矩陣與線性變換。</p>
-        </div>
-        <a href="grade11-trig.html" class="block text-center py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-sm transition">進入高二錯題本 →</a>
-      </article>
-
-      <article class="bg-white rounded-2xl border-2 border-rose-200 p-6 shadow-sm hover:shadow-xl transition flex flex-col justify-between space-y-4">
-        <div class="space-y-3">
-          <span class="px-3 py-1 rounded-full bg-rose-100 text-rose-800 text-xs font-bold">高三（Grade 12）• 第五、六冊共 73 題</span>
-          <h2 class="text-2xl font-extrabold text-slate-900"><a href="grade12-calculus.html" class="hover:text-rose-600">高三錯題本：選修統計、二次曲線與微積分</a></h2>
-          <p class="text-sm text-slate-600">涵蓋：機率統計 II（二項分布與信賴區間）、三角函數疊合與複數極式（棣美弗定理）、極限與無窮等比級數（夾擠定理）、二次曲線（拋物線、橢圓、雙曲線）、多項式函數的微積分。</p>
-        </div>
-        <a href="grade12-calculus.html" class="block text-center py-2.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-sm transition">進入高三錯題本 →</a>
-      </article>
-    </div>
+    <section class="space-y-5" aria-labelledby="grades-title">
+      <div><p class="text-sm font-bold uppercase tracking-widest text-indigo-700">CHOOSE YOUR GRADE</p><h2 id="grades-title" class="text-2xl font-extrabold text-slate-900">依年級開啟錯題本</h2></div>
+      <div class="grid gap-5 md:grid-cols-3">
+        <article class="flex flex-col justify-between gap-5 rounded-2xl border-2 border-indigo-200 bg-white p-6 shadow-sm hover:shadow-lg"><div><span class="rounded-full bg-indigo-100 px-3 py-1 text-xs font-bold text-indigo-800">高一｜數學 I、II</span><h3 class="mt-4 text-xl font-extrabold">代數、函數與有限數學</h3><p class="mt-2 text-sm text-slate-600">數與式、多項式、指數與對數、數列、排列組合、機率與數據分析。</p></div><a class="rounded-xl bg-indigo-600 px-4 py-3 text-center font-bold text-white hover:bg-indigo-700" href="grade10-algebra.html">進入高一錯題本 →</a></article>
+        <article class="flex flex-col justify-between gap-5 rounded-2xl border-2 border-sky-200 bg-white p-6 shadow-sm hover:shadow-lg"><div><span class="rounded-full bg-sky-100 px-3 py-1 text-xs font-bold text-sky-800">高二｜數學 III、IV</span><h3 class="mt-4 text-xl font-extrabold">三角、向量與矩陣</h3><p class="mt-2 text-sm text-slate-600">三角函數、直線與圓、平面及空間向量、空間中的平面與直線、矩陣。</p></div><a class="rounded-xl bg-sky-600 px-4 py-3 text-center font-bold text-white hover:bg-sky-700" href="grade11-trig.html">進入高二錯題本 →</a></article>
+        <article class="flex flex-col justify-between gap-5 rounded-2xl border-2 border-rose-200 bg-white p-6 shadow-sm hover:shadow-lg"><div><span class="rounded-full bg-rose-100 px-3 py-1 text-xs font-bold text-rose-800">高三｜選修數甲／乙</span><h3 class="mt-4 text-xl font-extrabold">統計、二次曲線與微積分</h3><p class="mt-2 text-sm text-slate-600">機率統計、三角函數與複數、極限、圓錐曲線、多項式微積分。</p></div><a class="rounded-xl bg-rose-600 px-4 py-3 text-center font-bold text-white hover:bg-rose-700" href="grade12-calculus.html">進入高三錯題本 →</a></article>
+      </div>
+    </section>
+    <p class="text-center text-sm text-slate-500">建議每週回顧一次錯題，完成訂正後隔幾天再做一次，確認自己能獨立解題。</p>
   </main>
 </body>
 </html>
