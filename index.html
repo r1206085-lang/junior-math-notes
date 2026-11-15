@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html lang="zh-Hant" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>數學互動學習網｜課程、故事與錯題複習</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>十二年國教國中數學互動學習網｜七、八、九年級完整 20 單元課程</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body class="bg-slate-50 font-sans leading-relaxed text-slate-800">
-  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur">
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur">
     <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-3">
-      <a href="index.html" class="flex items-center gap-2 font-extrabold text-slate-900"><span class="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-lg text-white">∑</span>數學互動學習網</a>
+      <a href="index.html" class="flex items-center gap-2 font-extrabold text-slate-900"><span class="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-lg text-white">∑</span><span>國中數學互動教材網</span></a>
       <nav class="flex flex-wrap gap-2 text-sm font-semibold" aria-label="主要導覽">
-        <a class="rounded-lg px-3 py-2 hover:bg-slate-100" href="數學科普/index.html">📰 數學故事 Wiki</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-100" href="#grade-7">七年級（7 單元）</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-100" href="#grade-8">八年級（8 單元）</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-100" href="#grade-9">九年級（5 單元）</a>
+        <a class="rounded-lg bg-rose-100 px-3 py-2 text-rose-900 hover:bg-rose-200" href="數學科普/index.html">📰 數學故事</a>
         <a class="rounded-lg bg-amber-100 px-3 py-2 text-amber-900 hover:bg-amber-200" href="math-story-presentation.html">🎞️ 教學簡報</a>
-        <a class="rounded-lg bg-rose-100 px-3 py-2 text-rose-900 hover:bg-rose-200" href="high/my-mistakes/index.html">📓 高中錯題本</a>
         <a class="rounded-lg px-3 py-2 hover:bg-slate-100" href="high/index.html">高中專區</a>
       </nav>
     </div>
   </header>
+
   <main class="mx-auto max-w-6xl space-y-12 px-4 py-10">
-    <section class="rounded-3xl bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 p-8 text-white shadow-xl sm:p-12">
-      <span class="rounded-full border border-indigo-300/30 bg-indigo-400/15 px-3 py-1 text-sm text-indigo-100">國中課程 × 數學故事 × 高中複習</span>
-      <h1 class="mt-5 text-3xl font-extrabold tracking-tight sm:text-5xl">讓數學概念看得見，也學得會。</h1>
-      <p class="mt-4 max-w-3xl text-slate-300">從國中三年課程單元出發，延伸到數學史故事與高中錯題整理。選擇一個入口，開始你的數學旅程。</p>
-      <div class="mt-7 flex flex-wrap gap-3"><a class="rounded-xl bg-amber-400 px-5 py-3 font-bold text-slate-950 hover:bg-amber-300" href="數學科普/index.html">探索數學故事 Wiki →</a><a class="rounded-xl bg-white/10 px-5 py-3 font-bold text-white hover:bg-white/20" href="high/index.html">前往高中數學專區 →</a></div>
-    </section>
-
-    <section class="grid gap-5 md:grid-cols-3" aria-label="特色入口">
-      <a href="數學科普/index.html" class="rounded-2xl border-2 border-stone-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg"><span class="text-3xl">📰</span><h2 class="mt-3 text-xl font-extrabold">數學故事 Wiki</h2><p class="mt-2 text-sm text-slate-600">閱讀希帕索斯、笛卡兒、阿基米德等數學故事與科普專題。</p><span class="mt-4 inline-block font-bold text-rose-700">閱讀五篇精選故事 →</span></a>
-      <a href="math-story-presentation.html" class="rounded-2xl border-2 border-amber-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg"><span class="text-3xl">🎞️</span><h2 class="mt-3 text-xl font-extrabold">一頁一故事教學簡報</h2><p class="mt-2 text-sm text-slate-600">五個數學奇聞，支援滑鼠、鍵盤翻頁與投影片進度提示。</p><span class="mt-4 inline-block font-bold text-amber-700">開始簡報 →</span></a>
-      <a href="high/my-mistakes/index.html" class="rounded-2xl border-2 border-rose-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg"><span class="text-3xl">📓</span><h2 class="mt-3 text-xl font-extrabold">高中錯題本</h2><p class="mt-2 text-sm text-slate-600">依高一、高二、高三整理題目，採三段式回顧、診斷與訂正。</p><span class="mt-4 inline-block font-bold text-rose-700">進入錯題本 →</span></a>
-    </section>
-
-    <section class="space-y-5" aria-labelledby="junior-title">
-      <div class="flex flex-wrap items-end justify-between gap-3 border-b-2 border-indigo-500 pb-3"><div><p class="text-sm font-bold tracking-widest text-indigo-700">JUNIOR MATH</p><h2 id="junior-title" class="text-2xl font-extrabold">國中數學課程單元</h2></div><span class="text-sm text-slate-500">七至九年級，共 20 個核心單元</span></div>
-      <div class="grid gap-5 md:grid-cols-3">
-        <article class="rounded-2xl border border-emerald-200 bg-white p-5"><h3 class="text-lg font-extrabold text-emerald-800">七年級｜數與代數</h3><ul class="mt-3 list-inside list-disc space-y-1 text-sm"><li><a class="hover:text-indigo-700" href="grade7-01-integers.html">數與數線</a></li><li><a class="hover:text-indigo-700" href="grade7-02-integer-operations.html">整數的運算</a></li><li><a class="hover:text-indigo-700" href="grade7-03-fractions.html">分數的運算</a></li><li><a class="hover:text-indigo-700" href="grade7-04-linear-equations.html">一元一次方程式</a></li><li><a class="hover:text-indigo-700" href="grade7-05-simultaneous-equations.html">二元一次聯立方程式</a></li><li><a class="hover:text-indigo-700" href="grade7-06-coordinates.html">直角座標與圖形</a></li><li><a class="hover:text-indigo-700" href="grade7-07-ratios.html">比與比例式</a></li></ul></article>
-        <article class="rounded-2xl border border-sky-200 bg-white p-5"><h3 class="text-lg font-extrabold text-sky-800">八年級｜代數與幾何</h3><ul class="mt-3 list-inside list-disc space-y-1 text-sm"><li><a class="hover:text-indigo-700" href="grade8-01-polynomials.html">乘法公式與多項式</a></li><li><a class="hover:text-indigo-700" href="grade8-02-square-roots.html">平方根</a></li><li><a class="hover:text-indigo-700" href="grade8-03-pythagorean.html">勾股定理</a></li><li><a class="hover:text-indigo-700" href="grade8-04-factorization.html">因式分解</a></li><li><a class="hover:text-indigo-700" href="grade8-05-quadratic-equations.html">一元二次方程式</a></li><li><a class="hover:text-indigo-700" href="grade8-06-sequences.html">數列與級數</a></li><li><a class="hover:text-indigo-700" href="grade8-07-triangle-centers.html">三角形的心與幾何證明</a></li><li><a class="hover:text-indigo-700" href="grade8-08-quadrilaterals.html">平行與四邊形</a></li></ul></article>
-        <article class="rounded-2xl border border-rose-200 bg-white p-5"><h3 class="text-lg font-extrabold text-rose-800">九年級｜函數與應用</h3><ul class="mt-3 list-inside list-disc space-y-1 text-sm"><li><a class="hover:text-indigo-700" href="grade9-01-similarity.html">相似形</a></li><li><a class="hover:text-indigo-700" href="grade9-02-circles.html">點、直線與圓</a></li><li><a class="hover:text-indigo-700" href="grade9-03-quadratic-functions.html">二次函數</a></li><li><a class="hover:text-indigo-700" href="grade9-04-statistics-probability.html">統計與機率</a></li><li><a class="hover:text-indigo-700" href="grade9-05-3d-geometry.html">生活中的立體圖形</a></li></ul></article>
+    <section class="rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 p-8 text-white shadow-xl sm:p-12">
+      <span class="rounded-full border border-indigo-300/30 bg-indigo-400/15 px-3 py-1 text-sm text-indigo-100">十二年國教 108 課綱 • 國中三年完整 20 單元</span>
+      <h1 class="mt-5 text-3xl font-extrabold tracking-tight sm:text-5xl">用生活化比喻與互動推導，讀懂國中三年的數學</h1>
+      <p class="mt-4 max-w-3xl text-slate-300">回到原本的國中數學課程首頁：七年級 7 單元、八年級 8 單元、九年級 5 單元。每個入口連到原有教材檔案；數學故事、簡報和高中專區則另外保留在導覽列，不取代國中課程。</p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="#grade-7" class="rounded-xl bg-emerald-400 px-5 py-3 font-bold text-slate-950 hover:bg-emerald-300">七年級課程 →</a>
+        <a href="#grade-8" class="rounded-xl bg-sky-400 px-5 py-3 font-bold text-slate-950 hover:bg-sky-300">八年級課程 →</a>
+        <a href="#grade-9" class="rounded-xl bg-rose-400 px-5 py-3 font-bold text-slate-950 hover:bg-rose-300">九年級課程 →</a>
       </div>
-      <p class="text-sm text-slate-500">各年級完整課程導覽：<a class="font-bold text-indigo-700 hover:underline" href="junior/index.html">國中數學專區首頁 →</a></p>
+    </section>
+
+    <section class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label="數學課程主題">
+      <div class="rounded-2xl border border-blue-200 bg-white p-5"><span class="text-2xl">🔢</span><h2 class="mt-2 font-extrabold text-blue-800">數與量</h2><p class="text-sm text-slate-600">數系、運算、根號與數列</p></div>
+      <div class="rounded-2xl border border-purple-200 bg-white p-5"><span class="text-2xl">⚖️</span><h2 class="mt-2 font-extrabold text-purple-800">代數</h2><p class="text-sm text-slate-600">方程式、多項式與函數</p></div>
+      <div class="rounded-2xl border border-amber-200 bg-white p-5"><span class="text-2xl">📐</span><h2 class="mt-2 font-extrabold text-amber-800">幾何</h2><p class="text-sm text-slate-600">三角形、四邊形、圓與立體</p></div>
+      <div class="rounded-2xl border border-teal-200 bg-white p-5"><span class="text-2xl">📈</span><h2 class="mt-2 font-extrabold text-teal-800">統計與機率</h2><p class="text-sm text-slate-600">資料整理、統計圖與機率</p></div>
+    </section>
+
+    <section id="grade-7" class="scroll-mt-24 space-y-5">
+      <div class="flex flex-wrap items-end justify-between gap-3 border-b-2 border-emerald-500 pb-3"><div><p class="text-sm font-bold tracking-widest text-emerald-700">GRADE 7</p><h2 class="text-2xl font-extrabold">七年級（國一）｜奠定數系擴展與代數基礎</h2><p class="text-sm text-slate-500">完整 7 個核心單元</p></div></div>
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <a href="grade7-01-integers.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-emerald-700">七年級 01 • 數與量</span><h3 class="mt-2 text-lg font-extrabold">數與數線</h3><p class="mt-2 text-sm text-slate-600">正負數、數線、相反數與絕對值。</p></a>
+        <a href="grade7-02-integer-operations.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-emerald-700">七年級 02 • 數與量</span><h3 class="mt-2 text-lg font-extrabold">整數的運算</h3><p class="mt-2 text-sm text-slate-600">整數加減乘除、四則混合與指數律。</p></a>
+        <a href="grade7-03-fractions.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-emerald-700">七年級 03 • 數與量</span><h3 class="mt-2 text-lg font-extrabold">分數的運算</h3><p class="mt-2 text-sm text-slate-600">分數四則運算、倒數與科學記號。</p></a>
+        <a href="grade7-04-linear-equations.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-emerald-700">七年級 04 • 代數</span><h3 class="mt-2 text-lg font-extrabold">代數式與一元一次方程式</h3><p class="mt-2 text-sm text-slate-600">列代數式、化簡、等量公理與應用題。</p></a>
+        <a href="grade7-05-simultaneous-equations.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-emerald-700">七年級 05 • 代數</span><h3 class="mt-2 text-lg font-extrabold">二元一次聯立方程式</h3><p class="mt-2 text-sm text-slate-600">代入消去法、加減消去法與應用題。</p></a>
+        <a href="grade7-06-coordinates.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-emerald-700">七年級 06 • 代數與幾何</span><h3 class="mt-2 text-lg font-extrabold">直角座標系與方程式圖形</h3><p class="mt-2 text-sm text-slate-600">座標平面、象限與線性方程式圖形。</p></a>
+        <a href="grade7-07-ratios.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-emerald-700">七年級 07 • 數與量</span><h3 class="mt-2 text-lg font-extrabold">比與比例式</h3><p class="mt-2 text-sm text-slate-600">比、比例式、正比與反比。</p></a>
+      </div>
+    </section>
+
+    <section id="grade-8" class="scroll-mt-24 space-y-5">
+      <div class="flex flex-wrap items-end justify-between gap-3 border-b-2 border-sky-500 pb-3"><div><p class="text-sm font-bold tracking-widest text-sky-700">GRADE 8</p><h2 class="text-2xl font-extrabold">八年級（國二）｜進入多項式、根號與幾何推理</h2><p class="text-sm text-slate-500">完整 8 個核心單元</p></div></div>
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <a href="grade8-01-polynomials.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-sky-700">八年級 01 • 代數</span><h3 class="mt-2 text-lg font-extrabold">乘法公式與多項式</h3><p class="mt-2 text-sm text-slate-600">平方公式、平方差與多項式運算。</p></a>
+        <a href="grade8-02-square-roots.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-sky-700">八年級 02 • 數與量</span><h3 class="mt-2 text-lg font-extrabold">平方根與根號運算</h3><p class="mt-2 text-sm text-slate-600">根號意義、最簡根式、近似值與有理化。</p></a>
+        <a href="grade8-03-pythagorean.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-sky-700">八年級 03 • 幾何</span><h3 class="mt-2 text-lg font-extrabold">勾股定理（畢氏定理）</h3><p class="mt-2 text-sm text-slate-600">直角三角形三邊關係與應用。</p></a>
+        <a href="grade8-04-factorization.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-sky-700">八年級 04 • 代數</span><h3 class="mt-2 text-lg font-extrabold">因式分解</h3><p class="mt-2 text-sm text-slate-600">提公因式、乘法公式與十字交乘法。</p></a>
+        <a href="grade8-05-quadratic-equations.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-sky-700">八年級 05 • 代數</span><h3 class="mt-2 text-lg font-extrabold">一元二次方程式</h3><p class="mt-2 text-sm text-slate-600">因式分解、配方法、公式解與應用問題。</p></a>
+        <a href="grade8-06-sequences.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-sky-700">八年級 06 • 數與量</span><h3 class="mt-2 text-lg font-extrabold">數列與級數</h3><p class="mt-2 text-sm text-slate-600">等差數列、等差級數與等比數列。</p></a>
+        <a href="grade8-07-triangle-centers.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-sky-700">八年級 07 • 幾何</span><h3 class="mt-2 text-lg font-extrabold">幾何證明與三角形的心</h3><p class="mt-2 text-sm text-slate-600">三角形全等、外心、內心與重心。</p></a>
+        <a href="grade8-08-quadrilaterals.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-sky-700">八年級 08 • 幾何</span><h3 class="mt-2 text-lg font-extrabold">平行與四邊形</h3><p class="mt-2 text-sm text-slate-600">平行線性質、平行四邊形與特殊四邊形。</p></a>
+      </div>
+    </section>
+
+    <section id="grade-9" class="scroll-mt-24 space-y-5">
+      <div class="flex flex-wrap items-end justify-between gap-3 border-b-2 border-rose-500 pb-3"><div><p class="text-sm font-bold tracking-widest text-rose-700">GRADE 9</p><h2 class="text-2xl font-extrabold">九年級（國三）｜挑戰函數、相似形與統計機率</h2><p class="text-sm text-slate-500">完整 5 個核心單元</p></div></div>
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <a href="grade9-01-similarity.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-rose-700">九年級 01 • 幾何</span><h3 class="mt-2 text-lg font-extrabold">相似形</h3><p class="mt-2 text-sm text-slate-600">比例線段、三角形相似與面積體積比。</p></a>
+        <a href="grade9-02-circles.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-rose-700">九年級 02 • 幾何</span><h3 class="mt-2 text-lg font-extrabold">點、直線與圓的關係</h3><p class="mt-2 text-sm text-slate-600">圓周角、弦心距、切線與圓的性質。</p></a>
+        <a href="grade9-03-quadratic-functions.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-rose-700">九年級 03 • 代數</span><h3 class="mt-2 text-lg font-extrabold">二次函數</h3><p class="mt-2 text-sm text-slate-600">拋物線圖形、頂點與最大值最小值。</p></a>
+        <a href="grade9-04-statistics-probability.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-rose-700">九年級 04 • 統計與機率</span><h3 class="mt-2 text-lg font-extrabold">統計與機率</h3><p class="mt-2 text-sm text-slate-600">統計圖表、集中量數、四分位數與古典機率。</p></a>
+        <a href="grade9-05-3d-geometry.html" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-bold text-rose-700">九年級 05 • 幾何</span><h3 class="mt-2 text-lg font-extrabold">生活中的立體圖形</h3><p class="mt-2 text-sm text-slate-600">柱體、錐體與球體的表面積和體積。</p></a>
+      </div>
+    </section>
+
+    <section class="rounded-3xl border-2 border-indigo-200 bg-indigo-50 p-6 sm:p-8">
+      <h2 class="text-2xl font-extrabold text-indigo-950">其他數學專區</h2>
+      <p class="mt-2 text-slate-700">以下是新增的數學故事、簡報及高中資源，作為國中課程以外的入口；國中原有課程已保留在本頁。</p>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <a href="數學科普/index.html" class="rounded-xl bg-rose-700 px-4 py-2.5 font-bold text-white hover:bg-rose-600">📰 閱讀數學科普日報 →</a>
+        <a href="math-story-presentation.html" class="rounded-xl bg-amber-400 px-4 py-2.5 font-bold text-slate-950 hover:bg-amber-300">🎞️ 開啟數學故事簡報 →</a>
+        <a href="high/index.html" class="rounded-xl bg-indigo-700 px-4 py-2.5 font-bold text-white hover:bg-indigo-600">📕 前往高中數學專區 →</a>
+      </div>
     </section>
   </main>
-  <footer class="mt-10 border-t border-slate-200 bg-white py-6 text-center text-sm text-slate-500">互動數學學習網 • 從故事、課程與錯題中累積理解</footer>
+  <footer class="mt-10 border-t border-slate-200 bg-white py-6 text-center text-sm text-slate-500">十二年國教國中數學互動學習網 • 七、八、九年級共 20 個核心單元</footer>
 </body>
 </html>
